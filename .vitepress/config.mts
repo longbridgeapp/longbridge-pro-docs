@@ -26,6 +26,7 @@ const docsSidebar = convertDocsToSidebars(docs);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/longbridge-pro-docs/',
   title: "Longbridge Pro Releases",
   description: "Longbridge Pro Releases",
   ignoreDeadLinks: true,
