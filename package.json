@@ -1,0 +1,25 @@
+{
+  "name": "longbridge-pro-docs",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longbridgeapp/longbridge-pro-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "bugs": {
+    "url": "https://github.com/longbridgeapp/longbridge-pro-docs/issues"
+  },
+  "homepage": "https://github.com/longbridgeapp/longbridge-pro-docs#readme",
+  "dependencies": {
+    "feishu-pages": "^0.4.1",
+    "vitepress": "^1.0.0-rc.20"
+  }
+}
