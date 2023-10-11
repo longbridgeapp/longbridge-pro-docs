@@ -11,7 +11,7 @@ const convertDocsToSidebars = (docs: any) => {
   for (const doc of docs) {
     let sidebar: DefaultTheme.SidebarItem = {
       text: doc.title,
-      link: 'docs/' + doc.slug,
+      link: '/docs/' + doc.slug + '.html',
     };
     if (doc.children.length > 0) {
       sidebar.items = convertDocsToSidebars(doc.children);
@@ -30,7 +30,8 @@ export default defineConfig({
   title: "Longbridge Pro Releases",
   description: "Longbridge Pro Releases",
   ignoreDeadLinks: true,
-  cleanUrls: true,
+  // cleanUrl 配合 vx.x.x.html 在 dev 模式下有 bug ，会出现无法访问的情况，暂时关闭，等 vitepress 更新版本解决
+  // cleanUrls: true,
   srcExclude: ['SUMMARY.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
