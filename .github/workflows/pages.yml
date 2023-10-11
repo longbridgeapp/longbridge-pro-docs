@@ -25,15 +25,15 @@ jobs:
           cp dist/docs.json ./
           yarn
           yarn build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: './.vitepress/dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v3
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v2
+      #   with:
+      #     path: './.vitepress/dist'
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v2
       - name: Deploy to OSS
         run: |
           wget https://github.com/aliyun/ossutil/releases/download/v.1.7.17/ossutil-v1.7.17-linux-amd64.zip
