@@ -26,7 +26,7 @@ const docsSidebar = convertDocsToSidebars(docs);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: process.env.NODE_ENV === 'development' ? '/' : 'https://assets.lbkrs.com/github/release/release-notes/longbridge-pro-docs/',
+  base: '/longbridge-pro-docs/',
   title: "Longbridge Pro Releases",
   description: "Longbridge Pro Releases",
   ignoreDeadLinks: true,

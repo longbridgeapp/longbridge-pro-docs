@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "dev": "NODE_ENV=development vitepress dev",
-    "build": "NODE_ENV=production vitepress build",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "bugs": {
