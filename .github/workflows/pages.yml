@@ -21,8 +21,8 @@ jobs:
         uses: longbridgeapp/feishu-pages@main
       - name: Build Pages
         run: |
-          cp -r dist/docs ./
-          cp dist/docs.json ./
+          cp -r dist/docs/* docs/
+          cp dist/docs.json docs/
           yarn
           yarn autocorrect --fix docs/
           yarn translate
