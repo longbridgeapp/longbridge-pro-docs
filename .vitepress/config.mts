@@ -64,7 +64,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      // { text: 'Home', link: '/' },
+      { text: 'Home', link: 'https://longportapp.com' },
       // { text: 'Releases', link: '/markdown-examples' },
       { text: 'GitHub', link: 'https://github.com/longbridgeapp/longbridge-pro-docs' }
     ],
