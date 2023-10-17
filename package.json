@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
+    "export": "yarn feishu-pages && cp -r dist/docs/* docs/ && cp dist/docs.json docs/",
+    "translate": "node ./scripts/cn2hk.js",
+    "dev": "NODE_ENV=development vitepress dev",
+    "build": "NODE_ENV=production vitepress build",
     "preview": "vitepress preview"
   },
   "bugs": {
@@ -19,7 +21,10 @@
   },
   "homepage": "https://github.com/longbridgeapp/longbridge-pro-docs#readme",
   "dependencies": {
-    "feishu-pages": "^0.4.1",
+    "autocorrect-node": "^2.8.4",
+    "feishu-pages": "^0.4.2",
+    "glob": "^10.3.10",
+    "opencc-js": "^1.0.5",
     "vitepress": "^1.0.0-rc.20"
   }
 }

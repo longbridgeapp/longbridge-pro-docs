@@ -24,6 +24,8 @@ jobs:
           cp -r dist/docs ./
           cp dist/docs.json ./
           yarn
+          yarn autocorrect --fix docs/
+          yarn translate
           yarn build
       # - name: Setup Pages
       #   uses: actions/configure-pages@v3
